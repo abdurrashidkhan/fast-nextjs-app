@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Dashboard = ({ children }) => {
+const Dashboard = () => {
   return (
     <div>
-      <h1>DashBoard Sidebar</h1>
-      {children}
+      <h1> welcome To Dashboard</h1>
     </div>
   );
 };
