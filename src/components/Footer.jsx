@@ -75,7 +75,7 @@ const Footer = () => {
         © 2023 Copyright:
         <a
           class="text-neutral-800 dark:text-neutral-400"
-          href="https://tailwind-elements.com/"
+          href="https://abdurrashidkhan2025.web.app/"
           > Rashid khan</a
         >
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ActiveLink from "./ActiveClass/ActiveLink";
 
 const navLink = [
   { name: "Home", path: "/" },
@@ -10,6 +11,7 @@ const navLink = [
 ];
 
 const Navbar = () => {
+
   return (
     <nav className="container mx-auto px-2 py-4">
       <ul className="flex items-center justify-between">
@@ -20,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-5">
           {navLink.map(({ name, path }) => (
             <li key={path} >
-              <Link href={path}>{name}</Link>
+              <ActiveLink exact={path === '/'} ActiveClassName='text-blue-700' href={path}>{name}</ActiveLink>
             </li>
           ))}
         </div>
