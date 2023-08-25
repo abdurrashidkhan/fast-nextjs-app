@@ -6,8 +6,8 @@ const Dashboard = ({ children }) => {
     { path: '/dashboard', name: 'Overview', },
     { path: '/dashboard/add-product', name: 'Add Project', },
     { path: '/dashboard/manage-projects', name: 'Manage Projects', },
-
   ]
+  
   return (
     <div className="container mx-auto px-2">
       <div className='flex items-center gap-5'>
