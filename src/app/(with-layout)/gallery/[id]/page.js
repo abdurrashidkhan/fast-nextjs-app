@@ -3,7 +3,7 @@ import getOneData from "@/utils/getOneData/getOneData";
 import { useParams } from "next/navigation";
 
 
-const useOneProduct = async () => {
+const OneProduct = async () => {
   const { id } = useParams();
   const data = await getOneData(id)
   return (
@@ -16,4 +16,4 @@ const useOneProduct = async () => {
   );
 }
 
-export default useOneProduct;
+export default OneProduct;
