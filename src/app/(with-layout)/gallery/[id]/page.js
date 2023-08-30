@@ -3,9 +3,9 @@ import getOneData from "@/utils/getOneData/getOneData";
 import { useParams } from "next/navigation";
 
 
-const OneProduct =  () => {
-  const { id } = useParams();
-  const data =  getOneData(id)
+const SingleProduct = async () => {
+  const { id } =  useParams();
+  const data = await getOneData(id)
   return (
     <div className="container mx-auto px-2 py-5">
       <div>
@@ -16,4 +16,4 @@ const OneProduct =  () => {
   );
 }
 
-export default OneProduct;
+export default SingleProduct;
